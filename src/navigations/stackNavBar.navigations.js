@@ -2,8 +2,9 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import Pages from '../pages';
-import {faHome, faUser} from '@fortawesome/free-solid-svg-icons';
+import {faHome, faUser, faChild} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import MyPages from '../pages/myself';
 const NavStack = createBottomTabNavigator();
 
 
@@ -22,6 +23,18 @@ function StackNavBar() {
         },
         }}
     />
+
+<NavStack.Screen
+        name="Self Improvement"
+        component={MyPages}
+        options={{
+        headerTitle: 'Self Improvement',
+        tabBarIcon: ({color}) => {
+            return <FontAwesomeIcon icon={faChild} size={20} color={color} />;
+        },
+        }}
+    />
+
     <NavStack.Screen
     name="About"
     component={Pages.ProfilePages}

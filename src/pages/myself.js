@@ -9,47 +9,46 @@ import ProfilePages from './profile.pages';
 const {HomeStyle} = Style;
 
 
-function HomePages({navigation}) {
+function MyPages({navigation}) {
  const data = [
  {
     id: 1,
-    nama: 'Random thing to do',
-    gambar: 'https://media.istockphoto.com/photos/and-a-concept-yellow-question-mark-glowing-amid-black-question-marks-picture-id1305169776?b=1&k=20&m=1305169776&s=170667a&w=0&h=mpYdh2MzGN_rqxoRNlO5KWGCCq3ZktzSfp-wA0nD9no=',
-    link: 'Stuff',
-    desc: 'Need something to do?'
+    nama: 'Charity',
+    gambar: 'https://ofhsoupkitchen.org/wp-content/uploads/2020/11/charity-begins-at-home.png',
+    link: 'Charity',
+    desc: 'Want to do something good to others?'
  },
-
 
  {
     id: 2,
-    nama: 'Social',
-    gambar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0didI0H1KKGAy0l39S6PI_XaQZUaMGgKwHilsWy4l2C3bsECshEkY7Y5FeDaTJk4xFQ4&usqp=CAU',
-    link: 'Social',
-    desc: 'Want to make a friend? or Have fun with friends that you have?'
+    nama: 'Recreational',
+    gambar: 'https://quizizz.com/media/resource/gs/quizizz-media/quizzes/2f31402a-2a0c-4667-a745-a4cdd1a2068a',
+    link: 'Recreation',
+    desc: 'Want to use your time to relieve?'
  },
 
  {
     id: 3,
-    nama: 'DIY',
-    gambar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZ-NOS3NHGuv7hlRqHk98qtyN50ipWdV5_Q&usqp=CAU',
-    link: 'DIY',
-    desc: 'Feel like creating something?'
- },
- 
- {
-    id: 4,
-    nama: 'Cash Out',
-    gambar:'https://media.istockphoto.com/photos/hand-open-empty-an-wallet-picture-id971197892?k=20&m=971197892&s=612x612&w=0&h=PJ7CykMmuco5ce4YvVEujTfjryG-ZdcjazONjczsROc=',
-    link: 'Free',
-    desc: 'Feeling broke? Out of Money?'
+    nama: 'Cooking',
+    gambar:'https://www.gffoodservice.com.au/content/uploads/2019/08/culinary_terms-hero-1-@2x-1.jpg',
+    link: 'Cooking',
+    desc: 'Hungry?'
  },
 
  {
+    id: 4,
+    nama: 'Busy Work',
+    gambar:'https://www.motivation.africa/wp-content/uploads/2021/08/remote-working-in-Africa.jpg',
+    link: 'Work',
+    desc: 'Feeling like doing something Challenging?'
+ },
+ 
+ {
     id: 5,
-    nama: 'Lone Wolf',
-    gambar:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROxITcTLmyz0EjHAo-f7bJ7Jeiso6oMAux-bS3tI4GWy21cNOClViTJA33dbyqrl1KlgE&usqp=CAU',
-    link: 'Alone',
-    desc: 'Need some time alone? or just no companion?'
+    nama: 'Education',
+    gambar:'https://www.roffeypark.ac.uk/wp-content/uploads/2018/06/the-7-best-books-to-improve-influencing-skills-2-scaled.jpg',
+    link: 'Education',
+    desc: 'Want to learn something?'
  },
 
  ];
@@ -112,4 +111,4 @@ function HomePages({navigation}) {
   
 
 
-export default HomePages;
+export default MyPages;
